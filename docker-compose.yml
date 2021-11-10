@@ -1,0 +1,20 @@
+spec:
+  name: ms - ocr
+  services:
+  - name: web
+    dockerfile_path: Dockerfile
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    routes:
+      - path: /
+    source_dir: /
+    git:
+      branch: master
+      repo_clone_url: https://github.com/Sanfo212/ms-ocr.git
+    envs:
+    - key: DEBUG
+      value: "0"
+    - key: ECHO_ACTIVE
+      value: "0"
+    - key: APP_AUTH_TOKEN
+      value: "CHANGE_AND_ENCRYPT_ME"
