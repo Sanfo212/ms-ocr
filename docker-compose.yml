@@ -1,5 +1,5 @@
 spec:
-  name: ms - ocr
+  name: ms-ocr
   services:
   - name: web
     dockerfile_path: Dockerfile
