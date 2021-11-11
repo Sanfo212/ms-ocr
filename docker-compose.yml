@@ -1,5 +1,5 @@
 spec:
-  name: ms-ocr
+  name: ocr-microservice
   services:
   - name: web
     dockerfile_path: Dockerfile
@@ -9,7 +9,7 @@ spec:
       - path: /
     source_dir: /
     git:
-      branch: master
+      branch: main
       repo_clone_url: https://github.com/Sanfo212/ms-ocr.git
     envs:
     - key: DEBUG
@@ -18,3 +18,7 @@ spec:
       value: "0"
     - key: APP_AUTH_TOKEN
       value: "CHANGE_AND_ENCRYPT_ME"
+
+
+
+     

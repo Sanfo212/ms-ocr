@@ -1,9 +1,10 @@
+
+pytesseract.pytesseract.tesseract_cmd = "C:\Python\Tesseract-OCR\tesseract.exe"
+
 import pathlib
 import pytesseract
-
-pytesseract.pytesseract.tesseract_cmd = 'C:\Python\Tesseract-OCR\tesseract.exe'
-
 from PIL import Image
+
 BASE_DIR = pathlib.Path(__file__).parent
 IMG_DIR = BASE_DIR / "images"
 img_path = IMG_DIR / "ingredients-1.png"
