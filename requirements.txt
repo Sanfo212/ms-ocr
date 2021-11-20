@@ -10,3 +10,9 @@ aiofiles
 python-multipart
 pillow
 pytesseract
+
+
+
+
+
+

@@ -7,11 +7,11 @@ from app.main import BASE_DIR, UPLOAD_DIR, get_settings
 from PIL import Image, ImageChops
 import requests
 
-ENDPOINT="https://fastapi-docker-l3j59.ondigitalocean.app/"
+ENDPOINT="http://80.85.85.167.app/"
 
 def test_get_home():
     response = requests.get(ENDPOINT)
-    assert response.text != "<h1>Hello world</h1>"
+    assert response.text != "<h1>Hello world!!</h1>"
     assert response.status_code == 200
     assert  "text/html" in response.headers['content-type']
 
