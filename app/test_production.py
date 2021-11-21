@@ -7,7 +7,7 @@ from app.main import BASE_DIR, UPLOAD_DIR, get_settings
 from PIL import Image, ImageChops
 import requests
 
-ENDPOINT="http://80.85.85.167.app/"
+ENDPOINT="http://80.85.85.167/"
 
 def test_get_home():
     response = requests.get(ENDPOINT)
